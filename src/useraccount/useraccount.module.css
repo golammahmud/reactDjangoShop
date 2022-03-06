@@ -1,0 +1,108 @@
+.div1 {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header1 {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  padding: 20px;
+  float: left;
+  text-decoration: none;
+}
+.hbutton {
+  float: right;
+ padding: 10px;
+ margin-right: 10px;
+}
+
+.Ostatus{
+    border-radius:20px;
+    padding:15px 5px 15px 5px;
+    background-color:#e45757;
+
+    margin:30px 10px 5px 100vh;
+    box-shadow: 0px 0px 5px #ccc;
+    text-shadow: 0px 0px 5px rgb(149, 144, 144);
+    width:22%;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; 
+}
+.statusbar{
+    border-radius:20px;
+    padding:10px;
+    background-color:#ceb2b2;
+
+
+ 
+    box-shadow: 0px 0px 5px #ccc;
+    text-shadow: 0px 0px 5px rgb(149, 144, 144);
+    width: 100%;
+    display:inline-flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    margin:5px 0 10px 0;
+}
+
+
+.Styles.orderDetailsTable{
+    width:100%;
+    margin:0 auto;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    color:#333;
+    text-align:center;
+    border:1px solid #ccc;
+}
+
+.userstatusdiv{
+    width:100%;
+    margin:0 auto;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    color:#333;
+    text-align:center;
+    
+    float:right;
+
+}
+.userstatus {
+  border-radius:20px;
+  padding:10px;
+  background-color:#e45757;
+  float: right;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  justify-items: center;
+  
+
+}
+
+.profileinfobox{
+    width:100%;
+    margin:0 auto;
+    /* border-collapse:collapse;
+    border-spacing:0; */
+    border-radius: 10px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    color:#333;
+    text-align:center;
+    box-shadow: 0px 0px 5px #ccc;
+    text-shadow: 0px 0px 5px rgb(149, 146, 146);
+    background-color:#fff;
+    justify-content:space-evenly;
+    padding:20px 0 20px 0;
+    margin-top:10px;
+}

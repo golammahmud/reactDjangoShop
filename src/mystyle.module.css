@@ -1,0 +1,10 @@
+.bigblue {
+    color: DodgerBlue;
+    padding: 40px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+  }
+  .formcontainer{
+      width: 40%;
+      margin-top:4rem;
+  }

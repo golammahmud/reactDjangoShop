@@ -186,7 +186,11 @@ const rows = [
             </TableRow>
           )}
         </TableBody>
-        <TableFooter>
+       
+        </Table>
+        
+      </TableContainer>
+      <TableFooter>
           <TableRow>
             <TablePagination
               rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
@@ -206,8 +210,6 @@ const rows = [
             />
           </TableRow>
         </TableFooter>
-        </Table>
-      </TableContainer>
       {/* <TablePagination
         rowsPerPageOptions={[5,10, 20, 40,100]}
         component="div"

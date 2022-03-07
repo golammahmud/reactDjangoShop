@@ -28,7 +28,7 @@ import RedeemIcon from "@mui/icons-material/Redeem";
 
 import Styles from "./useraccount.module.css";
 import OrderDetailsTable from "./component/orderDetailsTable";
-
+import {NavLink, Link,Outlet,useParams,useNavigate} from "react-router-dom";
 const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
     top: 22,
@@ -119,7 +119,9 @@ const steps = [
   "Create an ad",
 ];
 
-export default function CustomizedSteppers() {
+ function Ordersdetails() {
+  const {id}=useParams()
+  console.log(id)
   return (
     <Container fluid>
       <div>
@@ -195,3 +197,5 @@ export default function CustomizedSteppers() {
     </Container>
   );
 }
+
+export default Ordersdetails;

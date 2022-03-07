@@ -1,48 +1,68 @@
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import * as React from "react";
-import PropTypes from "prop-types";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import MailIcon from "@mui/icons-material/Mail";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
+import Paper from "@mui/material/Paper";
+import Stack from "@mui/material/Stack";
+import { styled } from "@mui/material/styles";
 import {
-  Routes,
-  Route,
-  Outlet,
-  Link,
-  useLocation,
-  useNavigate,
-  useParams,
-  NavLink,
-} from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col, Container, Badge, ListGroup } from "react-bootstrap";
+  Row,
+  Col,
+  Container,
+  Badge,
+  ListGroup,
+  Navbar,
+  Button,
+} from "react-bootstrap";
+import Avatar from "@mui/material/Avatar";
+import Styles from "./useraccount.module.css";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
-import { Card, Feed } from "semantic-ui-react";
-import { BiHeart } from "react-icons/bi";
-import { BiSupport } from "react-icons/bi";
-import { BiShoppingBag } from "react-icons/bi";
-import { BsFillPersonFill } from "react-icons/bs";
-import { GoLocation } from "react-icons/go";
 
-const drawerWidth = 240;
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+}));
 
-const Address = (props) => {
+export default function Address() {
   return (
     <div>
-    <>address</>
+      <div className={Styles.div1}>
+        <h1 className={Styles.header1}>
+          <span>
+            <LocationOnIcon
+              style={{ fontSize: "30px", color: "red", marginRight: "10px" }}
+            />
+            Address
+          </span>
+        </h1>
+        <Button className={Styles.hbutton} variant="outline-secondary">
+          Add new Address
+        </Button>{" "}
+      </div>
+     <Container>
+     <Item style={{padding:"20px 10px 20px 10px" ,fontSize:"15px"}}>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={{ xs: 1, sm: 2, md: 4 }}
+              justifyContent="space-evenly"
+              alignItems="center"
+            > 
+            <p>Ralf Edward</p>
+            <p>777 Brockton Avenue, Abington MA 2351</p>
+            <p>+1 (781) 765-4321</p>
+           <div className="float-right ml-28">
+           <Button variant="none"><EditIcon/></Button>
+            <Button variant="none"><DeleteIcon/></Button>
+           </div>
+
+              
+              </Stack>
+          </Item>
+     </Container>
     </div>
   );
-};
-export default Address;
+}

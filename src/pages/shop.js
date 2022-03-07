@@ -65,7 +65,8 @@ function Shop() {
                          <div
                               className="mask"
                               style={{
-                                backgroundColor: "rgba(57, 192, 237, 0.2)",
+                                zIndex: 1,
+                                // backgroundColor: "rgba(157, 142, 237, 0.2)",
                               }}
                             ></div>
                          </NavLink>

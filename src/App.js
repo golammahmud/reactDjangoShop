@@ -34,7 +34,7 @@ import SellerDashboard from "./seller/dashboard";
 import SellerProfile from "./seller/profile";
 import SellerOrders from "./seller/orders";
 import Addproduct from "./seller/addproduct";
-
+import SellerNavbar from "./seller/sellarnavbar";
 import Error from "./pages/error";
 
 function App() {
@@ -81,7 +81,9 @@ function App() {
      
 
                 {/* seller routing section */}
-          <Route path="/seller" element={<SellerDashboard />}>
+          <Route path="/seller" element={<SellerNavbar />}>
+            <Route index element={<SellerDashboard />} />
+            <Route path="dashboard" element={<SellerDashboard />} />
             <Route path="addproduct" element={<Addproduct />}/>
             <Route path="orders" element={<SellerOrders />}/>
             <Route path="profile" element={<SellerProfile />}/>

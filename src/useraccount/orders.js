@@ -9,6 +9,12 @@ import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 import { BiShoppingBag } from "react-icons/bi";
 import { Outlet,NavLink,useParams } from "react-router-dom";
 import VisibilityIcon from '@mui/icons-material/Visibility';
+
+
+import OrdersModal from "./component/ordersmodal";
+import Ordersdetails from "./ordersdetails";
+
+
 function Orders(props) {
   
   const [open, setOpen] = React.useState(false);
@@ -117,10 +123,7 @@ function Orders(props) {
 
                     <td>
                       <NavLink to="45">
-                        <span><VisibilityIcon style={{fontSize: '30px' ,color:"gray"}}  onClick={() => {
-                          setOrder(order);
-                          setOpen(true);
-                        }}/></span>
+                        <span><OrdersModal Ordersdetails={Ordersdetails} VisibilityIcon={VisibilityIcon}/></span>
                         </NavLink>
                       {/* <button
                         className="btn btn-primary"

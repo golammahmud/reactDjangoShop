@@ -1,5 +1,5 @@
-import * as React from 'react';
-import ".././index.css"
+import * as React from "react";
+import ".././index.css";
 import {
   MDBCard,
   MDBCardImage,
@@ -14,7 +14,7 @@ import {
 import BootstrapTable from "react-bootstrap-table-next";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col, Container, Badge, ListGroup,Navbar } from "react-bootstrap";
+import { Row, Col, Container, Badge, ListGroup, Navbar } from "react-bootstrap";
 
 import { Card, Feed } from "semantic-ui-react";
 import { BiHeart } from "react-icons/bi";
@@ -25,28 +25,25 @@ import { GoLocation } from "react-icons/go";
 
 // mui components
 
-
-
-
 // materials icon
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import MailIcon from "@mui/icons-material/Mail";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import {
   Routes,
   Route,
@@ -120,8 +117,8 @@ function Dashboard(props) {
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event &&
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
     ) {
       return;
     }
@@ -140,285 +137,281 @@ function Dashboard(props) {
     <div>
       <Toolbar />
       <ListGroup variant="flush" numbered className="my-3">
-              <h5 className=" align-items-start mt-5 items-start">Dashboard</h5>
-              <NavLink to="orders">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BiShoppingBag
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Orders
-                    </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
+        <h5 className=" align-items-start mt-5 items-start">Dashboard</h5>
+        <NavLink to="orders">
+          <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+            <div className="ms-2 me-auto">
+              <div className="fw-bold">
+                <span>
+                  <BiShoppingBag
+                    style={{ fontSize: "25px", marginRight: "4px" }}
+                  />
+                </span>
+                Orders
+              </div>
+            </div>
+            <Badge bg="primary" pill>
+              14
+            </Badge>
+          </ListGroup.Item>
+        </NavLink>
 
-              <NavLink to="wishlist">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        {" "}
-                        <BiHeart
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Wishlist
-                    </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
+        <NavLink to="wishlist">
+          <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+            <div className="ms-2 me-auto">
+              <div className="fw-bold">
+                <span>
+                  {" "}
+                  <BiHeart style={{ fontSize: "25px", marginRight: "4px" }} />
+                </span>
+                Wishlist
+              </div>
+            </div>
+            <Badge bg="primary" pill>
+              14
+            </Badge>
+          </ListGroup.Item>
+        </NavLink>
 
-              <NavLink to="supportticket">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BiSupport
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Support Tickets
-                    </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
+        <NavLink to="supportticket">
+          <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+            <div className="ms-2 me-auto">
+              <div className="fw-bold">
+                <span>
+                  <BiSupport style={{ fontSize: "25px", marginRight: "4px" }} />
+                </span>
+                Support Tickets
+              </div>
+            </div>
+            <Badge bg="primary" pill>
+              14
+            </Badge>
+          </ListGroup.Item>
+        </NavLink>
 
-              <h5 className="text-left mt-3">Accounts Settings</h5>
+        <h5 className="text-left mt-3">Accounts Settings</h5>
 
-              <NavLink to="profile">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BsFillPersonFill
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Profile Info
-                    </div>
-                  </div>
-                </ListGroup.Item>
-              </NavLink>
+        <NavLink to="profile">
+          <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+            <div className="ms-2 me-auto">
+              <div className="fw-bold">
+                <span>
+                  <BsFillPersonFill
+                    style={{ fontSize: "25px", marginRight: "4px" }}
+                  />
+                </span>
+                Profile Info
+              </div>
+            </div>
+          </ListGroup.Item>
+        </NavLink>
 
-              <NavLink to="address">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        {" "}
-                        <GoLocation
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Address
-                    </div>
-                  </div>
-                </ListGroup.Item>
-              </NavLink>
+        <NavLink to="address">
+          <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+            <div className="ms-2 me-auto">
+              <div className="fw-bold">
+                <span>
+                  {" "}
+                  <GoLocation
+                    style={{ fontSize: "25px", marginRight: "4px" }}
+                  />
+                </span>
+                Address
+              </div>
+            </div>
+          </ListGroup.Item>
+        </NavLink>
 
-              <NavLink to="paymentmethod">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BiSupport
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Payment Methods
-                    </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
-            </ListGroup>
+        <NavLink to="paymentmethod">
+          <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+            <div className="ms-2 me-auto">
+              <div className="fw-bold">
+                <span>
+                  <BiSupport style={{ fontSize: "25px", marginRight: "4px" }} />
+                </span>
+                Payment Methods
+              </div>
+            </div>
+            <Badge bg="primary" pill>
+              14
+            </Badge>
+          </ListGroup.Item>
+        </NavLink>
+      </ListGroup>
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
   return (
-    
     <Container fluid className="mt-md-5">
       <Row>
-        <Col className="me-auto px-auto mx-auto"  md={3} >
-          
+        <Col className="me-auto px-auto mx-auto" md={3}>
           <CssBaseline />
-      <Navbar id="nav" fixed="bottom"  expand="lg">
-  <Container fluid>
-   <Navbar.Brand className="text-white">Admin Dashboard</Navbar.Brand>
-    <Navbar.Toggle aria-controls="" onClick={handleDrawerToggle}>
-            {" "}
-           
-            <bicon.FaBars className="ml-4 " color="white" />{" "}
-          </Navbar.Toggle>
-  
-  </Container>
-</Navbar>
+          <Navbar id="nav" fixed="bottom" expand="lg">
+            <Container fluid>
+              <Navbar.Brand className="text-white">
+                Admin Dashboard
+              </Navbar.Brand>
+              <Navbar.Toggle aria-controls="" onClick={handleDrawerToggle}>
+                {" "}
+                <bicon.FaBars className="ml-4 " color="white" />{" "}
+              </Navbar.Toggle>
+            </Container>
+          </Navbar>
 
+          <Box
+            component="nav"
+            sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+            aria-label="mailbox folders"
+          >
+            {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
 
-<Box
-        component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-        aria-label="mailbox folders"
-      >
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+            <SwipeableDrawer
+              // anchor={anchor}
+              open={mobileOpen}
+              onClose={handleDrawerToggle}
+              ModalProps={{
+                keepMounted: true, // Better open performance on mobile.
+              }}
+              sx={{
+                display: { xs: "block", sm: "none" },
+                "& .MuiDrawer-paper": {
+                  boxSizing: "border-box",
+                  width: drawerWidth,
+                },
+              }}
+            >
+              {drawer}
+            </SwipeableDrawer>
 
-        <SwipeableDrawer
-          // anchor={anchor}
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </SwipeableDrawer>
-       
-         <div id="cdashboard" >
-            <ListGroup variant="flush" numbered className="my-3" sx={{
-            display: { xs: "none", sm: "block" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-          open>
-              <h5 className=" align-items-start mt-5 items-start">Dashboard</h5>
-              <NavLink to="orders">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BiShoppingBag
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Orders
+            <div id="cdashboard">
+              <ListGroup
+                variant="flush"
+                numbered
+                className="my-3"
+                sx={{
+                  display: { xs: "none", sm: "block" },
+                  "& .MuiDrawer-paper": {
+                    boxSizing: "border-box",
+                    width: drawerWidth,
+                  },
+                }}
+                open
+              >
+                <h5 className=" align-items-start mt-5 items-start">
+                  Dashboard
+                </h5>
+                <NavLink to="orders">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">
+                        <span>
+                          <BiShoppingBag
+                            style={{ fontSize: "25px", marginRight: "4px" }}
+                          />
+                        </span>
+                        Orders
+                      </div>
                     </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
+                    <Badge bg="primary" pill>
+                      14
+                    </Badge>
+                  </ListGroup.Item>
+                </NavLink>
 
-              <NavLink to="wishlist">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        {" "}
-                        <BiHeart
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Wishlist
+                <NavLink to="wishlist">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">
+                        <span>
+                          {" "}
+                          <BiHeart
+                            style={{ fontSize: "25px", marginRight: "4px" }}
+                          />
+                        </span>
+                        Wishlist
+                      </div>
                     </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
+                    <Badge bg="primary" pill>
+                      14
+                    </Badge>
+                  </ListGroup.Item>
+                </NavLink>
 
-              <NavLink to="supportticket">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BiSupport
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Support Tickets
+                <NavLink to="supportticket">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">
+                        <span>
+                          <BiSupport
+                            style={{ fontSize: "25px", marginRight: "4px" }}
+                          />
+                        </span>
+                        Support Tickets
+                      </div>
                     </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
+                    <Badge bg="primary" pill>
+                      14
+                    </Badge>
+                  </ListGroup.Item>
+                </NavLink>
 
-              <h5 className="text-left mt-3">Accounts Settings</h5>
+                <h5 className="text-left mt-3">Accounts Settings</h5>
 
-              <NavLink to="profile">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BsFillPersonFill
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Profile Info
+                <NavLink to="profile">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">
+                        <span>
+                          <BsFillPersonFill
+                            style={{ fontSize: "25px", marginRight: "4px" }}
+                          />
+                        </span>
+                        Profile Info
+                      </div>
                     </div>
-                  </div>
-                </ListGroup.Item>
-              </NavLink>
+                  </ListGroup.Item>
+                </NavLink>
 
-              <NavLink to="address">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        {" "}
-                        <GoLocation
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Address
+                <NavLink to="address">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">
+                        <span>
+                          {" "}
+                          <GoLocation
+                            style={{ fontSize: "25px", marginRight: "4px" }}
+                          />
+                        </span>
+                        Address
+                      </div>
                     </div>
-                  </div>
-                </ListGroup.Item>
-              </NavLink>
+                  </ListGroup.Item>
+                </NavLink>
 
-              <NavLink to="paymentmethod">
-                <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">
-                      <span>
-                        <BiSupport
-                          style={{ fontSize: "25px", marginRight: "4px" }}
-                        />
-                      </span>
-                      Payment Methods
+                <NavLink to="paymentmethod">
+                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">
+                        <span>
+                          <BiSupport
+                            style={{ fontSize: "25px", marginRight: "4px" }}
+                          />
+                        </span>
+                        Payment Methods
+                      </div>
                     </div>
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </NavLink>
-            </ListGroup>
-          </div>
-       
-
-      </Box>
-
+                    <Badge bg="primary" pill>
+                      14
+                    </Badge>
+                  </ListGroup.Item>
+                </NavLink>
+              </ListGroup>
+            </div>
+          </Box>
         </Col>
-        <Col variant="primary"  className="outlet"  md={9}>
+        <Col variant="primary" className="outlet" md={9}>
           <div>
             <Outlet />
           </div>
@@ -430,11 +423,8 @@ function Dashboard(props) {
 
 export default Dashboard;
 
-
-
-
-
-{/* <Container>
+{
+  /* <Container>
 <Row>
   <Col variant="primary" sm={3}>
     <div>
@@ -554,4 +544,5 @@ export default Dashboard;
     </div>
   </Col>
 </Row>
-</Container> */}
+</Container> */
+}

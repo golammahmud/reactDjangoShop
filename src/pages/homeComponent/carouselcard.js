@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
  function CarouselCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
         height="140"

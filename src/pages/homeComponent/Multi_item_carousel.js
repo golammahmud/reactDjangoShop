@@ -3,14 +3,14 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CarouselCard from "./carouselcard";
-
+import { Link } from "react-router-dom";
 function MultiCarouselPage() {
   return (
     <Carousel
   additionalTransfrom={0}
   arrows
   autoPlay
-  autoPlaySpeed={1000}
+  autoPlaySpeed={2000}
   centerMode={false}
   className=""
   containerClass="container-with-dots"
@@ -29,7 +29,7 @@ function MultiCarouselPage() {
         max: 3000,
         min: 1024
       },
-      items: 3,
+      items: 4,
       partialVisibilityGutter: 40
     },
     mobile: {
@@ -55,13 +55,13 @@ function MultiCarouselPage() {
   swipeable
 >
   
-    <CarouselCard />
-    <CarouselCard />
-    <CarouselCard />
-    <CarouselCard />
-    <CarouselCard />
-    <CarouselCard />
-    <CarouselCard />
+   <Link to="popular-product"> <CarouselCard /></Link>
+   <Link to="popular-product"> <CarouselCard /></Link>
+   <Link to="popular-product"> <CarouselCard /></Link>
+   <Link to="popular-product"> <CarouselCard /></Link>
+   <Link to="popular-product"> <CarouselCard /></Link>
+   <Link to="popular-product"> <CarouselCard /></Link>
+   <Link to="popular-product"> <CarouselCard /></Link>
    
 </Carousel>
   );

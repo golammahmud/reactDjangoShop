@@ -158,7 +158,7 @@ function SellerNavbar(props) {
           </ListGroup.Item>
         </NavLink>
 
-        <NavLink to="wishlist">
+        <NavLink to="products">
           <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
             <div className="ms-2 me-auto">
               <div className="fw-bold">
@@ -166,7 +166,7 @@ function SellerNavbar(props) {
                   {" "}
                   <BiHeart style={{ fontSize: "25px", marginRight: "4px" }} />
                 </span>
-                Wishlist
+               Products
               </div>
             </div>
             <Badge bg="primary" pill>
@@ -175,14 +175,14 @@ function SellerNavbar(props) {
           </ListGroup.Item>
         </NavLink>
 
-        <NavLink to="supportticket">
+        <NavLink to="addproduct">
           <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
             <div className="ms-2 me-auto">
               <div className="fw-bold">
                 <span>
                   <BiSupport style={{ fontSize: "25px", marginRight: "4px" }} />
                 </span>
-                Support Tickets
+                Add New Product
               </div>
             </div>
             <Badge bg="primary" pill>
@@ -208,7 +208,7 @@ function SellerNavbar(props) {
           </ListGroup.Item>
         </NavLink>
 
-        <NavLink to="address">
+        {/* <NavLink to="address">
           <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
             <div className="ms-2 me-auto">
               <div className="fw-bold">
@@ -238,7 +238,7 @@ function SellerNavbar(props) {
               14
             </Badge>
           </ListGroup.Item>
-        </NavLink>
+        </NavLink> */}
       </ListGroup>
     </div>
   );
@@ -320,7 +320,7 @@ function SellerNavbar(props) {
                   </ListGroup.Item>
                 </NavLink>
 
-                <NavLink to="wishlist">
+                <NavLink to="products">
                   <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
                     <div className="ms-2 me-auto">
                       <div className="fw-bold">
@@ -330,7 +330,7 @@ function SellerNavbar(props) {
                             style={{ fontSize: "25px", marginRight: "4px" }}
                           />
                         </span>
-                        Wishlist
+                        Products
                       </div>
                     </div>
                     <Badge bg="primary" pill>
@@ -339,7 +339,7 @@ function SellerNavbar(props) {
                   </ListGroup.Item>
                 </NavLink>
 
-                <NavLink to="supportticket">
+                <NavLink to="addproduct">
                   <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
                     <div className="ms-2 me-auto">
                       <div className="fw-bold">
@@ -348,7 +348,7 @@ function SellerNavbar(props) {
                             style={{ fontSize: "25px", marginRight: "4px" }}
                           />
                         </span>
-                        Support Tickets
+                       Add New Product
                       </div>
                     </div>
                     <Badge bg="primary" pill>
@@ -374,39 +374,7 @@ function SellerNavbar(props) {
                   </ListGroup.Item>
                 </NavLink>
 
-                <NavLink to="address">
-                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                    <div className="ms-2 me-auto">
-                      <div className="fw-bold">
-                        <span>
-                          {" "}
-                          <GoLocation
-                            style={{ fontSize: "25px", marginRight: "4px" }}
-                          />
-                        </span>
-                        Address
-                      </div>
-                    </div>
-                  </ListGroup.Item>
-                </NavLink>
-
-                <NavLink to="paymentmethod">
-                  <ListGroup.Item className="d-flex justify-content-between align-items-start my-3">
-                    <div className="ms-2 me-auto">
-                      <div className="fw-bold">
-                        <span>
-                          <BiSupport
-                            style={{ fontSize: "25px", marginRight: "4px" }}
-                          />
-                        </span>
-                        Payment Methods
-                      </div>
-                    </div>
-                    <Badge bg="primary" pill>
-                      14
-                    </Badge>
-                  </ListGroup.Item>
-                </NavLink>
+               
               </ListGroup>
             </div>
           </Box>

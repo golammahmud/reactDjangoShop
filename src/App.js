@@ -35,6 +35,7 @@ import SellerProfile from "./seller/profile";
 import SellerOrders from "./seller/orders";
 import Addproduct from "./seller/addproduct";
 import SellerNavbar from "./seller/sellarnavbar";
+import Products from "./seller/products";
 import Error from "./pages/error";
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
             <Route path="addproduct" element={<Addproduct />}/>
             <Route path="orders" element={<SellerOrders />}/>
             <Route path="profile" element={<SellerProfile />}/>
+            <Route path="products" element={<Products />}/>
 
           
           </Route>

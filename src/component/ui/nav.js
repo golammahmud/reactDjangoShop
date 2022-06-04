@@ -33,10 +33,10 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import SwipeableTemporaryCategoryDrawer from "./categorynav";
 
-function NavBar({itemCount}) {
+function NavBar({ itemCount }) {
 
-  
- 
+
+
   const [category, setCategory] = useContext(categoryContext);
 
   const [isLoading, setLoading] = useContext(loadContext);
@@ -111,7 +111,7 @@ function NavBar({itemCount}) {
                 className=" form-input"
                 aria-label="Search"
               />
-              <Button className="s-btn me-auto" variant="none">
+              <Button className="s-btn me-auto " variant="none">
                 <icon.FcSearch className="btn-icon" size={25} />
               </Button>
             </Form>
@@ -189,7 +189,7 @@ function NavBar({itemCount}) {
             title="category "
             id="collasible-nav-dropdown"
           > */}
-<SwipeableTemporaryCategoryDrawer/>
+          <SwipeableTemporaryCategoryDrawer />
           {/* <DropdownButton
             id="dropdown-button-dark-example2"
             variant="secondary"

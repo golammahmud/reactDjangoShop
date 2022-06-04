@@ -27,9 +27,10 @@ import {
   MDBCardFooter,
   MDBRow,
   MDBCol,
+ MDBContainer
 } from "mdb-react-ui-kit";
-import {NavLink , Link} from 'react-router-dom';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { NavLink, Link } from "react-router-dom";
+import PreviewIcon from "@mui/icons-material/Preview";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -57,7 +58,7 @@ function CardCategory() {
     setExpanded(!expanded);
   };
   return (
-    <div>
+    <MDBContainer>
       {" "}
       <MDBRow className="row-cols-1 row-cols-md-3 g-4">
         <MDBCol>
@@ -77,31 +78,35 @@ function CardCategory() {
                   alignItems="center"
                   spacing={2}
                 >
-                   <Link to="/category"><MDBCard className="h-100">
-                    <MDBCardImage
-                      src="https://mdbootstrap.com/img/new/standard/city/043.webp"
-                      alt="..."
-                      position="top"
-                      height="80px"
-                      width="80px"
-                    />
-                    <MDBCardBody>
-                      <MDBCardTitle>Apple</MDBCardTitle>
-                    </MDBCardBody>
-                  </MDBCard></Link>
+                  <Link to="/category">
+                    <MDBCard className="h-100">
+                      <MDBCardImage
+                        src="https://mdbootstrap.com/img/new/standard/city/043.webp"
+                        alt="..."
+                        position="top"
+                        height="80px"
+                        width="80px"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>Apple</MDBCardTitle>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </Link>
 
-                  <Link to="/category"><MDBCard className="h-100">
-                    <MDBCardImage
-                      src="https://mdbootstrap.com/img/new/standard/city/043.webp"
-                      alt="..."
-                      position="top"
-                      height="80px"
-                      width="80px"
-                    />
-                    <MDBCardBody>
-                      <MDBCardTitle>Apple</MDBCardTitle>
-                    </MDBCardBody>
-                  </MDBCard></Link>
+                  <Link to="/category">
+                    <MDBCard className="h-100">
+                      <MDBCardImage
+                        src="https://mdbootstrap.com/img/new/standard/city/043.webp"
+                        alt="..."
+                        position="top"
+                        height="80px"
+                        width="80px"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>Apple</MDBCardTitle>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </Link>
                 </Stack>
                 <Stack
                   direction="row"
@@ -109,30 +114,34 @@ function CardCategory() {
                   alignItems="center"
                   spacing={2}
                 >
-                   <Link to="/category"><MDBCard className="h-100">
-                    <MDBCardImage
-                      src="https://mdbootstrap.com/img/new/standard/city/043.webp"
-                      alt="..."
-                      position="top"
-                      height="80px"
-                      width="80px"
-                    />
-                    <MDBCardBody>
-                      <MDBCardTitle>Apple</MDBCardTitle>
-                    </MDBCardBody>
-                  </MDBCard></Link>
-                  <Link to="/category"><MDBCard className="h-100">
-                    <MDBCardImage
-                      src="https://mdbootstrap.com/img/new/standard/city/043.webp"
-                      alt="..."
-                      position="top"
-                      height="80px"
-                      width="80px"
-                    />
-                    <MDBCardBody>
-                      <MDBCardTitle>Apple</MDBCardTitle>
-                    </MDBCardBody>
-                  </MDBCard></Link>
+                  <Link to="/category">
+                    <MDBCard className="h-100">
+                      <MDBCardImage
+                        src="https://mdbootstrap.com/img/new/standard/city/043.webp"
+                        alt="..."
+                        position="top"
+                        height="80px"
+                        width="80px"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>Apple</MDBCardTitle>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </Link>
+                  <Link to="/category">
+                    <MDBCard className="h-100">
+                      <MDBCardImage
+                        src="https://mdbootstrap.com/img/new/standard/city/043.webp"
+                        alt="..."
+                        position="top"
+                        height="80px"
+                        width="80px"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>Apple</MDBCardTitle>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </Link>
                 </Stack>
               </Stack>
             </CardContent>
@@ -140,25 +149,24 @@ function CardCategory() {
               <IconButton aria-label="add to favorites">
                 <PreviewIcon />
                 <NavLink
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "red" : "black",
-                fontSize: "1rem",
-              fontFamily: "Helvetica Neue",
-              };
-            }}
-            to="/"
-            // key={invoice.number}
-          >
-           See More...
-          </NavLink>
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "red" : "black",
+                      fontSize: "1rem",
+                      fontFamily: "Helvetica Neue",
+                    };
+                  }}
+                  to="/"
+                  // key={invoice.number}
+                >
+                  See More...
+                </NavLink>
               </IconButton>
-              
             </CardActions>
           </Card>
         </MDBCol>
       </MDBRow>
-    </div>
+    </MDBContainer>
   );
 }
 

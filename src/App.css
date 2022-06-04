@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box !important;
+}
 input:focus,button:focus{
   outline:none;
 }
@@ -57,12 +59,14 @@ input:focus,button:focus{
 .form-input{
   background:rgb(209, 23, 23);
   color:#000000;
+  width:100vh !important;
 }
 
 
 .d-input{
   margin-right:-10px;
   margin-left:3px;
+  width:auto !important;
   /* background:coral; */
 }
 .nav-link{
@@ -79,7 +83,7 @@ input:focus,button:focus{
 
 .s-btn{
   height:44px;
-  width:33px;
+  min-width:18px !important;
   margin:0;
  
   /* border-radius:5px; */

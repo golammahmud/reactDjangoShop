@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box !important;
+}
 .dashboard{
     background-color: rgb(231, 226, 226);
 }

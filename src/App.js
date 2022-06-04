@@ -36,6 +36,7 @@ import SellerOrders from "./seller/orders";
 import Addproduct from "./seller/addproduct";
 import SellerNavbar from "./seller/sellarnavbar";
 import Products from "./seller/products";
+import Editprofile from "./seller/editprofile";
 import Error from "./pages/error";
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
 
           <Route path="/cart" element={<AddCart />} />
           <Route path="/checkout" element={<Checkout />} />
-                     {/* customer section */}
+          {/* customer section */}
 
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Registration />} />
@@ -72,26 +73,27 @@ function App() {
             <Route path="profile" element={<Profileinfo />} />
             <Route path="address" element={<Address />} />
             <Route path="paymentmethod" element={<Paymentmethod />} />
-            <Route path="orders" element={<Orders />}  >
-              <Route path=":orderId"element={<Ordersdetails />} />
+            <Route path="orders" element={<Orders />}>
+              <Route path=":orderId" element={<Ordersdetails />} />
             </Route>
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="supportticket" element={<Supportticket />} />
           </Route>
-         
-     
 
-                {/* seller routing section */}
+          {/* seller routing section */}
           <Route path="/seller" element={<SellerNavbar />}>
             <Route index element={<SellerDashboard />} />
             <Route path="dashboard" element={<SellerDashboard />} />
-            <Route path="addproduct" element={<Addproduct />}/>
-            <Route path="orders" element={<SellerOrders />}/>
-            <Route path="profile" element={<SellerProfile />}/>
-            <Route path="products" element={<Products />}/>
+            <Route path="addproduct" element={<Addproduct />} />
+            <Route path="orders" element={<SellerOrders />} />
+            <Route path="profile" element={<SellerProfile />} />
 
-          
+            <Route path="products" element={<Products />} />
           </Route>
+
+          {/* cart section */}
+          <Route path="cart" element={<AddCart/>} />
+          <Route path="checkout" element={<Checkout />}/>
 
           <Route path="*" element={<Error />} />
         </Routes>

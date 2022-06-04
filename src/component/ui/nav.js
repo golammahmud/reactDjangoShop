@@ -254,6 +254,13 @@ function NavBar({ itemCount }) {
             >
               Seller
             </NavLink>
+            <NavLink
+              className="nav2-link"
+              to="/user"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              User
+            </NavLink>
 
             {/* </Nav.Link> */}
             {/* <Nav.Link className="nav2-link text-white ">

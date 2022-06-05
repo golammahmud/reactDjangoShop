@@ -10,7 +10,7 @@ import {
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-import loginphoto from "../images/PnvTkU.jpg";
+import loginLogo from "../images/electrohub-logo.png"
 
 function LoginPage() {
   const styles = {
@@ -68,8 +68,10 @@ function LoginPage() {
         verticalAlign="middle"
       >
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header style={styles.loginHeader} as="h2" color="teal" textAlign="center">
-            <Image src="/logo.png" /> Log-in to your account
+        
+          <Header className="d-block p-2" style={styles.loginHeader} as="h2" color="teal" textAlign="center">
+          <Image src={loginLogo} style={{width: "160px"}} className="justify-content-center" />
+             <span className="d-block">Log-in to your account</span>
           </Header>
           <Form size="large" >
             <Segment stacked>

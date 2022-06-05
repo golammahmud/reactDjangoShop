@@ -4,5 +4,34 @@
 }
 
 .mianNav{
-    background-color: #1F2834 !important;
+    background-color: #28313C !important;
 }
+/* new nav responsive with media queries */
+@media only screen and  (max-width:979px) and (min-width: 775px) {
+  
+   }
+
+   @media only screen and  (max-width:775px) and (min-width:413px) {
+
+   }
+
+   @media only screen and  (max-width:412px)  {
+    body{
+      overflow-x:hidden;
+    }
+    .mianNav{
+       margin:auto 15px !important;
+       justify-content:center !important;
+       text-align:center !important;
+    }
+    .navlogo{        
+        margin:auto 15px !important;
+        justify-content:center !important;
+        text-align:center !important;
+    }
+
+   }
+  
+  
+  
+  

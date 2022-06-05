@@ -206,16 +206,16 @@ input:focus,button:focus{
   body{
     overflow-x:hidden;
   }
-  .brand-logo {
+  /* .brand-logo {
     color:white;
     font-size:larger; 
-    font-weight:bolder;
-    /* background-color:blue; */
-    justify-content:center;
+    font-weight:bolder; */
+        /* background-color:blue; */
+    /* justify-content:center;
     align-items: center;
     margin-bottom:5px;
     margin-left:120px;
-  }
+  } */
   .form-input {
    margin:2px;
    /* background-color:red; */

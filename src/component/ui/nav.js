@@ -302,6 +302,7 @@ function NavBar({ itemCount }) {
           </Navbar.Collapse>
           {/* </Container> */}
         </Navbar>
+        
       </div>
     </>
   );

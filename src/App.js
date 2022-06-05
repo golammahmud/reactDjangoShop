@@ -38,13 +38,14 @@ import SellerNavbar from "./seller/sellarnavbar";
 import Products from "./seller/products";
 import Editprofile from "./seller/editprofile";
 import Error from "./pages/error";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
     <div className="App">
       <ShopContext>
         <Nav />
-
+        <ScrollToTop smooth color="red" style={{backgroundColor:"gray"}} />
         <Routes>
           <Route path="/about" element={<About />} />
 

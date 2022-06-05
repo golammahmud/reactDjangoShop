@@ -4,7 +4,10 @@
 input:focus,button:focus{
   outline:none;
 }
-
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff !important;
+}
 .App {
   text-align: center;
 }
@@ -57,7 +60,7 @@ input:focus,button:focus{
 }
 
 .form-input{
-  background:rgb(209, 23, 23);
+  background:#FFFFFF !important;
   color:#000000;
   
 }

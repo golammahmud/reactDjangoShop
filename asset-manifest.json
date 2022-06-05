@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/reactDjangoShop/static/css/main.bfacbc12.chunk.css",
-    "main.js": "/reactDjangoShop/static/js/main.0f5be01c.chunk.js",
-    "main.js.map": "/reactDjangoShop/static/js/main.0f5be01c.chunk.js.map",
-    "runtime-main.js": "/reactDjangoShop/static/js/runtime-main.f5ecd74d.js",
-    "runtime-main.js.map": "/reactDjangoShop/static/js/runtime-main.f5ecd74d.js.map",
+    "main.js": "/reactDjangoShop/static/js/main.a309deff.chunk.js",
+    "main.js.map": "/reactDjangoShop/static/js/main.a309deff.chunk.js.map",
+    "runtime-main.js": "/reactDjangoShop/static/js/runtime-main.8c4c437c.js",
+    "runtime-main.js.map": "/reactDjangoShop/static/js/runtime-main.8c4c437c.js.map",
     "static/css/2.343faa9e.chunk.css": "/reactDjangoShop/static/css/2.343faa9e.chunk.css",
-    "static/js/2.18bd37b3.chunk.js": "/reactDjangoShop/static/js/2.18bd37b3.chunk.js",
-    "static/js/2.18bd37b3.chunk.js.map": "/reactDjangoShop/static/js/2.18bd37b3.chunk.js.map",
-    "static/js/3.1d878aba.chunk.js": "/reactDjangoShop/static/js/3.1d878aba.chunk.js",
-    "static/js/3.1d878aba.chunk.js.map": "/reactDjangoShop/static/js/3.1d878aba.chunk.js.map",
+    "static/js/2.059afb5b.chunk.js": "/reactDjangoShop/static/js/2.059afb5b.chunk.js",
+    "static/js/2.059afb5b.chunk.js.map": "/reactDjangoShop/static/js/2.059afb5b.chunk.js.map",
+    "static/js/3.f6a82df4.chunk.js": "/reactDjangoShop/static/js/3.f6a82df4.chunk.js",
+    "static/js/3.f6a82df4.chunk.js.map": "/reactDjangoShop/static/js/3.f6a82df4.chunk.js.map",
     "index.html": "/reactDjangoShop/index.html",
     "static/css/2.343faa9e.chunk.css.map": "/reactDjangoShop/static/css/2.343faa9e.chunk.css.map",
     "static/css/main.bfacbc12.chunk.css.map": "/reactDjangoShop/static/css/main.bfacbc12.chunk.css.map",
-    "static/js/2.18bd37b3.chunk.js.LICENSE.txt": "/reactDjangoShop/static/js/2.18bd37b3.chunk.js.LICENSE.txt",
+    "static/js/2.059afb5b.chunk.js.LICENSE.txt": "/reactDjangoShop/static/js/2.059afb5b.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/reactDjangoShop/static/media/outline-icons.ddae9b1b.woff",
     "static/media/electrohub-logo.0170e952.png": "/reactDjangoShop/static/media/electrohub-logo.0170e952.png",
     "static/media/styles.css": "/reactDjangoShop/static/media/revicons.e8746a62.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.f5ecd74d.js",
+    "static/js/runtime-main.8c4c437c.js",
     "static/css/2.343faa9e.chunk.css",
-    "static/js/2.18bd37b3.chunk.js",
+    "static/js/2.059afb5b.chunk.js",
     "static/css/main.bfacbc12.chunk.css",
-    "static/js/main.0f5be01c.chunk.js"
+    "static/js/main.a309deff.chunk.js"
   ]
 }

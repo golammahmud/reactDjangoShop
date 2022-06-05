@@ -32,6 +32,8 @@ import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import SwipeableTemporaryCategoryDrawer from "./categorynav";
+import Navlogo from "../../images/electrohub-logo.png";
+import Styles from "./ui.module.css";
 
 function NavBar({ itemCount }) {
 
@@ -51,11 +53,11 @@ function NavBar({ itemCount }) {
   return (
     // <div className="navbar-div">
     <>
-      <Navbar expand="sm" bg="none">
-        <Container className="nav1-con" fluid>
+      <Navbar expand="sm"  className={Styles.mianNav}>
+        <Container  fluid>
           <Navbar.Brand
             href="#home"
-            size="large"
+            // size="md"
             className="brand-logo text-white"
           >
             <NavLink
@@ -66,7 +68,7 @@ function NavBar({ itemCount }) {
                 textDecoration: "none",
               }}
             >
-              Electro Hub
+              <img  src={Navlogo} alt="Navlogo" className={Styles.navlogo}/>
             </NavLink>
           </Navbar.Brand>
           <div className="form-div w-50">

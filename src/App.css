@@ -42,11 +42,11 @@ input:focus,button:focus{
 
 
 /* navbar */
-.brand-logo {
+/* .brand-logo {
   color:white;
   font-size:120px; 
   font-weight:bolder;
-}
+} */
 .s-form{
   background-color:#FEBD69;
   justify-content:center;
